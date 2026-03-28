@@ -1,4 +1,4 @@
-import { toRoman } from '../src';
+import { toRoman } from '../src/roman-numerals';
 import {describe, it, expect } from "vitest";
 
 describe('Roman Numerals basics', () => {
@@ -10,6 +10,9 @@ describe('Roman Numerals basics', () => {
     })
     it('10', () => {
         expect(toRoman(10)).toBe('X');
+    })
+    it('40', () => {
+        expect(toRoman(40)).toBe('XL');
     })
     it('50', () => {
         expect(toRoman(50)).toBe('L');
